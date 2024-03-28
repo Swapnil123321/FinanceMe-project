@@ -12,11 +12,12 @@ pipeline {
 		        git branch: 'main', url: 'https://github.com/Swapnil123321/FinanceMe-project.git'
             }
 		}
-        stage('Publish the HTML report using TestNG') {
-            steps {
-                echo "This step will publish html reports"
-                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/var/lib/jenkins/workspace/Banking-capstone-project', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
-            }
-		}        
+		stage('Create a package') {
+	        steps {
+	            echo "This step will create a package using maven"
+	            sh "mvn package"
+	        }
+		} 
+	           
     }
 }
