@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.staragile.swapnil</groupId>
 	<artifactId>financeme</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1</version>
 	<name>financeme</name>
 	<description>Staragile Final Capstone project for Banking </description>
 	<properties>
@@ -56,5 +56,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
